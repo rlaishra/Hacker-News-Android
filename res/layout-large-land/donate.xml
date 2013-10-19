@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="600dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="5dp"
+            android:text="Hacker News Android will always remain free and ad-free."
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="However, if you like this app, you can support it by getting me a cup of coffee."
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/donate1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Donate $1" />
+
+        <Button
+            android:id="@+id/donate2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Donate $2" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Note: This is just a donation. It will not unlock any new feature."
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ImageView04"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/content"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_ver_shadow_left" />
+
+    <ImageView
+        android:id="@+id/ImageView03"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/content"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_ver_shadow_right" />
+
+</RelativeLayout>

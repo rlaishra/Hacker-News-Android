@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	
+    <item android:id="@+id/external_browser" android:showAsAction="always" android:visible="true" android:icon="@drawable/browser" android:title="External Browser"></item>
+    <item android:id="@+id/menu_share" android:title="Share" android:showAsAction="always" android:actionProviderClass="android.widget.ShareActionProvider" android:icon="@drawable/social_share"/>
+    <item android:id="@+id/menu_bookmarks" android:title="Bookmarks" android:icon="@drawable/ic_star_filled" android:showAsAction="never"></item>
+    <item android:id="@+id/menu_comments" android:title="Comments" android:icon="@drawable/social_chat" android:orderInCategory="1" android:showAsAction="always"></item>
+    <item android:id="@+id/menu_logout" android:title="Logout" android:showAsAction="never"></item>
+    <item android:id="@+id/menu_login" android:title="Login" android:showAsAction="never"></item><item android:id="@+id/menu_settings" android:showAsAction="never" android:title="Settings"></item><item android:id="@+id/menu_about" android:title="About" android:showAsAction="never"></item>
+    
+    
+    
+    
+    
+    
+</menu>
