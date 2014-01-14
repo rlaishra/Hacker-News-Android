@@ -1,0 +1,39 @@
+<!-- From: file:/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/AndroidManifest.xml -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="21" android:versionName="@string/app_version" package="com.rickylaishram.hackernews">
+
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="15"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <permission android:name="com.rickylaishram.hiccap.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+	<uses-permission android:name="com.rickylaishram.hiccap.permission.C2D_MESSAGE"/>
+	<!-- App receives GCM messages. -->
+	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<!-- GCM connects to Google Services. -->
+	<uses-permission android:name="android.permission.INTERNET"/> 
+	<!-- GCM requires a Google account. -->
+	<uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+	<!-- Keeps the processor from sleeping when a message is received. -->
+	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+	<uses-permission android:name="com.android.vending.BILLING"/>
+
+    <application android:hardwareAccelerated="true" android:icon="@drawable/icon_small" android:label="@string/app_name" android:logo="@drawable/icon_small" android:theme="@android:style/Theme.Holo.Light">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.rickylaishram.hackernews.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.rickylaishram.hackernews.ListActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.rickylaishram.hackernews.Article"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.rickylaishram.hackernews.Comments"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.rickylaishram.hackernews.Login"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.rickylaishram.hackernews.About"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.rickylaishram.hackernews.Settings"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.rickylaishram.hackernews.Reply"/>
+        <!--<activity android:name="com.rickylaishram.hackernews.CommentsNoti" android:configChanges="keyboardHidden|orientation|screenSize" ></activity>-->
+        <activity android:name="com.rickylaishram.hackernews.Bookmarks"/>
+        
+    </application>
+
+</manifest>

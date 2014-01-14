@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/assets" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/debug/assets" />
+    </dataSet>
+
+</merger>
