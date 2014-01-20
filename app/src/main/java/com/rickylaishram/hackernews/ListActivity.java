@@ -40,6 +40,8 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 
+import static com.rickylaishram.util.CommonUitls.isNightMode;
+
 public class ListActivity extends FragmentActivity implements ActionBar.OnNavigationListener {
 	
 	static ListView list_main;
@@ -70,7 +72,12 @@ public class ListActivity extends FragmentActivity implements ActionBar.OnNaviga
     public void onCreate(Bundle savedInstanceState) {
     	//StrictMode.enableDefaults();
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.list);
+
+        if(isNightMode(this)) {
+            setContentView(R.layout.list_night);
+        } else {
+            setContentView(R.layout.list);
+        }
         
         context 		= this;
         list_main 		= (ListView) findViewById(R.id.listView1);
@@ -249,7 +256,12 @@ public class ListActivity extends FragmentActivity implements ActionBar.OnNaviga
     			try {   				
     				mlist.clear();
         			// Adds the item to the adapter
-        			adapter = new ListAdapter(context, R.layout.list_layout, mlist);
+
+                    if(isNightMode(context)) {
+                        adapter = new ListAdapter(context, R.layout.list_layout_night, mlist);
+                    } else {
+        			    adapter = new ListAdapter(context, R.layout.list_layout, mlist);
+                    }
         	        list_main.setAdapter(adapter);
         	        
     				Elements titles = doc.select("body>center>table>tbody>tr>td>table>tbody>tr:has(td[class=title])");
@@ -426,12 +438,16 @@ public class ListActivity extends FragmentActivity implements ActionBar.OnNaviga
 		}
     	
 		protected void onPostExecute(Document doc) {
-			try {   				
+			try {
 				mlist.clear();
     			// Adds the item to the adapter
-    			adapter = new ListAdapter(context, R.layout.list_layout, mlist);
+                if(isNightMode(context)) {
+                    adapter = new ListAdapter(context, R.layout.list_layout_night, mlist);
+                } else {
+                    adapter = new ListAdapter(context, R.layout.list_layout, mlist);
+                }
     	        list_main.setAdapter(adapter);
-    	        
+
 				Elements titles 	= doc.select("body>center>table>tbody>tr>td>table>tbody>tr:has(td[class=title])");
 				Elements subtext 	= doc.select("body>center>table>tbody>tr>td>table>tbody>tr:has(td[class=subtext])");
 

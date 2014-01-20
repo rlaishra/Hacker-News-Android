@@ -6,7 +6,7 @@
     android:paddingLeft="1dp"
     android:paddingRight="1dp"
     android:paddingTop="5dp" >
-
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,7 +14,7 @@
         android:dividerPadding="12dp"
         android:orientation="horizontal"
         android:showDividers="middle" >
-
+
         <LinearLayout
             style="?android:attr/buttonBarStyle"
             android:layout_width="wrap_content"
@@ -22,14 +22,14 @@
             android:dividerPadding="0dp"
             android:orientation="vertical"
             android:showDividers="none" >
-
+
             <ImageButton
                 android:id="@+id/vote_up"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/button_up" />
-
+
             <ImageButton
                 android:id="@+id/vote_down"
                 style="?android:attr/buttonBarButtonStyle"
@@ -38,7 +38,16 @@
                 android:src="@drawable/button_down" />
 
         </LinearLayout>
-
+
+
+
+
+
+
+
+
+
+
         <LinearLayout
             style="?android:attr/buttonBarStyle"
             android:layout_width="match_parent"
@@ -46,7 +55,11 @@
             android:dividerPadding="0dp"
             android:orientation="vertical"
             android:showDividers="none" >
-
+
+
+
+
+
             <Button
                 android:id="@+id/list_article"
                 style="?android:attr/buttonBarButtonStyle"
@@ -55,7 +68,13 @@
                 android:layout_weight="1"
                 android:text="Read article"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
-
+
+
+
+
+
+
+
             <Button
                 android:id="@+id/list_comments"
                 style="?android:attr/buttonBarButtonStyle"

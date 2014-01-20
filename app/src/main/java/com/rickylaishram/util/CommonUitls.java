@@ -70,4 +70,17 @@ public class CommonUitls {
 		
 		return result;
 	}
+
+    public static Boolean isNightMode(Context context) {
+        Boolean result = false;
+
+        try {
+            SharedPreferences settings 	= context.getSharedPreferences("Settings", Context.MODE_PRIVATE);
+            result 		= settings.getBoolean("night_mode", false);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return result;
+    }
 }

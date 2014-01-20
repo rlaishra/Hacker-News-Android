@@ -27,6 +27,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.rickylaishram.util.CommonUitls.isNightMode;
+
 public class Login extends Activity {
 	
 	static Context context;
@@ -41,7 +43,12 @@ public class Login extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-        setContentView(R.layout.userpasslayout);
+
+        if(isNightMode(this)) {
+            setContentView(R.layout.userpasslayout_night);
+        } else {
+            setContentView(R.layout.userpasslayout);
+        }
         
         context 			= this;
         

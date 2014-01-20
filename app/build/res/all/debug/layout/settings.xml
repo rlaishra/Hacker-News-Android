@@ -49,11 +49,11 @@
 		            android:layout_width="match_parent"
 		            android:layout_height="wrap_content"
 		            android:layout_weight="1"
-		            android:text="Notification"
+		            android:text="Night Mode"
 		            android:textAppearance="?android:attr/textAppearanceMedium" />
 		
 		        <Switch
-		            android:id="@+id/notification"
+		            android:id="@+id/night_mode"
 		            android:layout_width="wrap_content"
 		            android:layout_height="wrap_content" />
 
@@ -126,13 +126,6 @@
 		            android:layout_gravity="right"
 		            android:layout_weight="1" />
 		    </LinearLayout>
-
-		    <Button
-		        android:id="@+id/donate"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:text="Donate" />
-            
         </LinearLayout>
     </ScrollView>
 

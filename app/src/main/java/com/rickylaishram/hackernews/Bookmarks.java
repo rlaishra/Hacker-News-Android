@@ -22,6 +22,8 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import static com.rickylaishram.util.CommonUitls.isNightMode;
+
 public class Bookmarks extends Activity {
 	
 	private Context context;
@@ -32,8 +34,13 @@ public class Bookmarks extends Activity {
 	
 	public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.list);
-        
+
+        if(isNightMode(this)) {
+            setContentView(R.layout.list_night);
+        } else {
+            setContentView(R.layout.list);
+        }
+
         //get default settings
         SharedPreferences settings 	= getSharedPreferences("Settings", 0);
         SharedPreferences cookie 	= getSharedPreferences("Cookie", MODE_PRIVATE);
@@ -57,8 +64,12 @@ public class Bookmarks extends Activity {
         list 			= (ListView) findViewById(R.id.listView1);
         
         mlist.clear();
-        
-        adapter = new BookMarkAdapter(this, R.layout.bookmark_element, mlist);
+
+        if(isNightMode(this)) {
+            adapter = new BookMarkAdapter(this, R.layout.bookmark_element_night, mlist);
+        } else {
+            adapter = new BookMarkAdapter(this, R.layout.bookmark_element, mlist);
+        }
         list.setAdapter(adapter);
         
         (new PopulateBookMark()).execute();

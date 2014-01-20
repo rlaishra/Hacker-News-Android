@@ -36,6 +36,8 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import static com.rickylaishram.util.CommonUitls.isNightMode;
+
 public class ListAdapter extends ArrayAdapter<ArticlesList>{
 
     Context context; 
@@ -97,10 +99,10 @@ public class ListAdapter extends ArrayAdapter<ArticlesList>{
         if(!item.article_url.startsWith("http")) {
         	if(!item.comment_url.isEmpty()) {
         		holder.title.setEnabled(false);
-        		holder.title.setTextColor(Color.BLACK);
+        		//holder.title.setTextColor(Color.BLACK);
         	} else {
         		holder.title.setEnabled(true);
-        		holder.title.setTextColor(Color.BLACK);
+        		//holder.title.setTextColor(Color.BLACK);
         	}
         }
         
@@ -116,11 +118,19 @@ public class ListAdapter extends ArrayAdapter<ArticlesList>{
             holder.comments.setTextColor(Color.GRAY);
             holder.domain.setTextColor(Color.GRAY);
         } else {
-        	holder.title.setTextColor(Color.BLACK);
-        	holder.points.setTextColor(Color.BLACK);
-            holder.submiter.setTextColor(Color.BLACK);
-            holder.comments.setTextColor(Color.GRAY);
-            holder.domain.setTextColor(Color.GRAY);
+            if(isNightMode(context)) {
+                holder.title.setTextColor(Color.WHITE);
+                holder.points.setTextColor(Color.WHITE);
+                holder.submiter.setTextColor(Color.WHITE);
+                holder.comments.setTextColor(Color.WHITE);
+                holder.domain.setTextColor(Color.WHITE);
+            } else {
+                holder.title.setTextColor(Color.BLACK);
+                holder.points.setTextColor(Color.BLACK);
+                holder.submiter.setTextColor(Color.BLACK);
+                holder.comments.setTextColor(Color.GRAY);
+                holder.domain.setTextColor(Color.GRAY);
+            }
         }
         
         //check if bookmarked
@@ -129,9 +139,18 @@ public class ListAdapter extends ArrayAdapter<ArticlesList>{
         Boolean isBookmarked	= bm.isBookmarked(item.comment_url);
         bm.close();
         if(isBookmarked) {
-        	holder.bookmark.setImageResource(R.drawable.ic_star_filled);
+            if(isNightMode(context)) {
+                holder.bookmark.setImageResource(drawable.ic_star_filled_night);
+            } else {
+                holder.bookmark.setImageResource(R.drawable.ic_star_filled);
+            }
+
         } else {
-        	holder.bookmark.setImageResource(R.drawable.ic_star_empty);
+            if(isNightMode(context)) {
+                holder.bookmark.setImageResource(drawable.ic_star_empty_night);
+            } else {
+        	    holder.bookmark.setImageResource(R.drawable.ic_star_empty);
+            }
         }
         
         //if (!item.article_url.startsWith("http") && item.comment_url.isEmpty()) {

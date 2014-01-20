@@ -61,6 +61,8 @@ import android.widget.ScrollView;
 import android.widget.ShareActionProvider;
 import android.widget.TextView;
 
+import static com.rickylaishram.util.CommonUitls.isNightMode;
+
 public class Comments extends Activity {
 	
 	static ArrayAdapter<CustomCommentListItem> adapter;
@@ -95,8 +97,13 @@ public class Comments extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-        setContentView(R.layout.comments);
-        
+
+        if(isNightMode(this)) {
+            setContentView(R.layout.comments_night);
+        } else {
+            setContentView(R.layout.comments);
+        }
+
         ActionBar actionbar = getActionBar();
         actionbar.setHomeButtonEnabled(true);
         actionbar.setDisplayHomeAsUpEnabled(true);
@@ -138,8 +145,12 @@ public class Comments extends Activity {
         list 			= (ListView) findViewById(R.id.comment_list);
         blue_bar 		= (ImageView) findViewById(R.id.blue_bar);
         comment_header 	= (LinearLayout) findViewById(R.id.comment_header);
-        
-        adapter = new CommentsAdapter(this, R.layout.comment_1, mlist);
+
+        if(isNightMode(this)) {
+            adapter = new CommentsAdapter(this, R.layout.comment_1_night, mlist);
+        } else {
+            adapter = new CommentsAdapter(this, R.layout.comment_1, mlist);
+        }
         list.setAdapter(adapter);
         
         drawer_handle.setVisibility(View.GONE);
@@ -238,7 +249,7 @@ public class Comments extends Activity {
 					public void onClick(View v) {
 						dialog.dismiss();
 						final Dialog dialog_reply = new Dialog(context);
-						dialog_reply.setContentView(R.layout.comment_reply);
+						dialog_reply.setContentView(R.layout.comments_reply);
 						dialog_reply.setCancelable(false);
 						dialog_reply.setTitle("Submit reply");
 						dialog_reply.show();
@@ -468,7 +479,7 @@ public class Comments extends Activity {
 						public void onClick(View v) {
 							dialog.dismiss();
 							final Dialog dialog_reply = new Dialog(context);
-							dialog_reply.setContentView(R.layout.comment_reply);
+							dialog_reply.setContentView(R.layout.comments_reply);
 							dialog_reply.setCancelable(false);
 							dialog_reply.setTitle("Replying to "+ mlist.get(pos).submitter);
 							dialog_reply.show();

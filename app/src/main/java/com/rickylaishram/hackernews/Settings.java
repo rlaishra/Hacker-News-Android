@@ -5,6 +5,11 @@ import java.util.List;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.app.AlarmManager;
+import android.app.AlertDialog;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -20,15 +25,25 @@ import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.Toast;
 
+import static com.rickylaishram.util.CommonUitls.isNightMode;
+
 
 public class Settings extends Activity {
 	
 	Integer COLOR_NUM = 0;
+    Context ctx;
 	
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.settings);
-	        
+
+        if(isNightMode(this)) {
+            setContentView(R.layout.settings_night);
+        } else {
+    		setContentView(R.layout.settings);
+        }
+
+        ctx = this;
+
 		ActionBar actionbar = getActionBar();
 		actionbar.setHomeButtonEnabled(true);
         actionbar.setDisplayHomeAsUpEnabled(true);
@@ -40,14 +55,13 @@ public class Settings extends Activity {
 		Integer t_size 						= settings.getInt("text_size", 1);
 		Integer color_num 					= settings.getInt("color_scheme", 0);
 		Boolean e_browser 					= settings.getBoolean("external_browser", false);
-		Boolean noti		 				= settings.getBoolean("notification", true);
+		Boolean night		 				= settings.getBoolean("night_mode", false);
 		
 		Spinner default_page 				= (Spinner) findViewById(R.id.default_page);
 		Spinner text_size					= (Spinner) findViewById(R.id.text_size);
 		Switch external_browser 			= (Switch) findViewById(R.id.external_browser);
-		Switch notification 				= (Switch) findViewById(R.id.notification);
+		Switch night_mode 				= (Switch) findViewById(R.id.night_mode);
 		Spinner color						= (Spinner) findViewById(R.id.color_scheme);
-		Button donate						= (Button) findViewById(R.id.donate);
 		
 		COLOR_NUM	= color_num;
 		
@@ -62,7 +76,7 @@ public class Settings extends Activity {
 		
 		// default/user selected settings
 		external_browser.setChecked(e_browser);
-		notification.setChecked(noti);
+		night_mode.setChecked(night);
 		
 		//default page Setup spinner
 		List<String> page_list = new ArrayList<String>();
@@ -107,13 +121,39 @@ public class Settings extends Activity {
 			}
 		});
 		
-		notification.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+		night_mode.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 			
 			@Override
 			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 				SharedPreferences.Editor editor = settings.edit();
-				editor.putBoolean("notification", isChecked);
+				editor.putBoolean("night_mode", isChecked);
 				editor.commit();
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(ctx);
+                builder.setMessage("Restart app for change to switch mode?");
+
+                builder.setPositiveButton("Restart", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Intent mStartActivity = new Intent(ctx, Splash.class);
+                        int mPendingIntentId = 123456;
+                        PendingIntent mPendingIntent = PendingIntent.getActivity(ctx, mPendingIntentId,    mStartActivity, PendingIntent.FLAG_CANCEL_CURRENT);
+                        AlarmManager mgr = (AlarmManager)ctx.getSystemService(Context.ALARM_SERVICE);
+                        mgr.set(AlarmManager.RTC, System.currentTimeMillis() + 100, mPendingIntent);
+                        System.exit(0);
+                    }
+                });
+
+                builder.setNegativeButton("Restart Later", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Toast.makeText(ctx, "Change will take place when you restart the app", Toast.LENGTH_LONG).show();
+                    }
+                });
+
+                AlertDialog dialog = builder.create();
+                dialog.show();
+
 			}
 		});
 		

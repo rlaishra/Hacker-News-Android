@@ -18,6 +18,8 @@ import android.widget.RelativeLayout;
 import android.widget.ShareActionProvider;
 import android.widget.Toast;
 
+import static com.rickylaishram.util.CommonUitls.isNightMode;
+
 public class Article extends Activity {
 	
 	static String article_url;
@@ -28,7 +30,12 @@ public class Article extends Activity {
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-        setContentView(R.layout.article);
+
+        if(isNightMode(this)) {
+            setContentView(R.layout.article_night);
+        } else {
+            setContentView(R.layout.article);
+        }
         
         ActionBar actionbar = getActionBar();
         actionbar.setHomeButtonEnabled(true);

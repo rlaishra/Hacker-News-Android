@@ -11,12 +11,19 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
+import static com.rickylaishram.util.CommonUitls.isNightMode;
+
 public class About extends Activity{
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-        setContentView(R.layout.about);
-        
+
+        if(isNightMode(this)) {
+            setContentView(R.layout.about_night);
+        } else {
+            setContentView(R.layout.about);
+        }
+
         ActionBar actionbar = getActionBar();
         actionbar.setHomeButtonEnabled(true);
         actionbar.setDisplayHomeAsUpEnabled(true);
