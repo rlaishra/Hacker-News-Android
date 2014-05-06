@@ -27,3 +27,8 @@ proguard/
 *.ipr
 *.iws
 .idea/
+
+*.iml_bak
+.imi_bak/*
+.idea_bak/*
+.gradle/*

@@ -94,6 +94,11 @@
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
+                name="button_up_night"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/button_up_night.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
                 name="c_1"
                 path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/c_1.png"
                 qualifiers="xhdpi"
@@ -154,6 +159,11 @@
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
+                name="ic_button_down_night"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/ic_button_down_night.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
                 name="ic_launcher"
                 path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/ic_launcher.png"
                 qualifiers="xhdpi"
@@ -184,8 +194,18 @@
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
+                name="ic_star_empty_night"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/ic_star_empty_night.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
                 name="ic_star_filled"
                 path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/ic_star_filled.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_star_filled_night"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/ic_star_filled_night.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
@@ -294,8 +314,18 @@
                 qualifiers=""
                 type="layout" />
             <file
+                name="article_night"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/article_night.xml"
+                qualifiers=""
+                type="layout" />
+            <file
                 name="bookmark_element"
                 path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/bookmark_element.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="bookmark_element_night"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/bookmark_element_night.xml"
                 qualifiers=""
                 type="layout" />
             <file
@@ -304,8 +334,18 @@
                 qualifiers=""
                 type="layout" />
             <file
+                name="comment_1_night"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/comment_1_night.xml"
+                qualifiers=""
+                type="layout" />
+            <file
                 name="comment_links"
                 path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/comment_links.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="comment_links_night"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/comment_links_night.xml"
                 qualifiers=""
                 type="layout" />
             <file
@@ -316,6 +356,16 @@
             <file
                 name="comments"
                 path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/comments.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="comments_night"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/comments_night.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="comments_reply"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/comments_reply.xml"
                 qualifiers=""
                 type="layout" />
             <file
@@ -334,6 +384,16 @@
                 qualifiers=""
                 type="layout" />
             <file
+                name="list_layout_night"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/list_layout_night.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="list_night"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/list_night.xml"
+                qualifiers=""
+                type="layout" />
+            <file
                 name="list_popup"
                 path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/list_popup.xml"
                 qualifiers=""
@@ -349,6 +409,11 @@
                 qualifiers=""
                 type="layout" />
             <file
+                name="settings_night"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/settings_night.xml"
+                qualifiers=""
+                type="layout" />
+            <file
                 name="splash"
                 path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/splash.xml"
                 qualifiers=""
@@ -356,6 +421,11 @@
             <file
                 name="userpasslayout"
                 path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/userpasslayout.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="userpasslayout_night"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/userpasslayout_night.xml"
                 qualifiers=""
                 type="layout" />
             <file
@@ -440,78 +510,9 @@
                     name="AppTheme"
                     parent="android:Theme.Holo.Light.DarkActionBar" />
             </file>
-            <file
-                name="userpasslayout_night"
-                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/userpasslayout_night.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="comment_links_night"
-                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/comment_links_night.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="article_night"
-                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/article_night.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="comments_reply"
-                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/comments_reply.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="list_layout_night"
-                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/list_layout_night.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="settings_night"
-                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/settings_night.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="bookmark_element_night"
-                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/bookmark_element_night.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="list_night"
-                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/list_night.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="comment_1_night"
-                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/comment_1_night.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="comments_night"
-                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/comments_night.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="ic_star_filled_night"
-                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/ic_star_filled_night.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="ic_button_down_night"
-                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/ic_button_down_night.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="button_up_night"
-                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/button_up_night.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="ic_star_empty_night"
-                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/ic_star_empty_night.png"
-                qualifiers="xhdpi"
-                type="drawable" />
         </source>
         <source path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/build/res/rs/debug" />
+        <source path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/build/res/generated/debug" />
     </dataSet>
     <dataSet config="debug" >
         <source path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/debug/res" />
