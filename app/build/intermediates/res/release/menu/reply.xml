@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/reply_send" android:icon="@drawable/send" android:title="Send" android:showAsAction="always"></item>
+    
+
+</menu><!-- From: file:/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/menu/reply.xml -->

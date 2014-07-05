@@ -1,5 +1,5 @@
 <!-- From: file:/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/AndroidManifest.xml -->
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="22" android:versionName="@string/app_version" package="com.rickylaishram.hackernews">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="23" android:versionName="@string/app_version" package="com.rickylaishram.hackernews">
 
     <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="15"/>
 
@@ -19,7 +19,9 @@
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.rickylaishram.hackernews.Login"/>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.rickylaishram.hackernews.About"/>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.rickylaishram.hackernews.Settings"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.rickylaishram.hackernews.Reply"/>
+        <!--<activity
+            android:name="com.rickylaishram.hackernews.Reply"
+            android:configChanges="keyboardHidden|orientation|screenSize" />-->
         <activity android:name="com.rickylaishram.hackernews.URLOpener">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>

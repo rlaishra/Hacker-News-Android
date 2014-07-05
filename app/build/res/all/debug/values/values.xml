@@ -5,7 +5,7 @@
     <eat-comment />
 
     <string name="app_name">Hacker News Android</string>
-    <string name="app_version">3.23 (28012014)</string>
+    <string name="app_version">3.24 (06052014)</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
     <string name="point_text_color">#B6B6B6</string>

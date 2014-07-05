@@ -21,6 +21,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.AsyncTask;
@@ -58,7 +59,7 @@ public class ListAdapter extends ArrayAdapter<ArticlesList>{
         View row = convertView;
         //Holder holder = null;
         final Holder holder = new Holder();
-        
+
         //if(row == null){
             LayoutInflater inflater = ((Activity)context).getLayoutInflater();
             row 					= inflater.inflate(layoutResourceId, parent, false);
@@ -200,9 +201,9 @@ public class ListAdapter extends ArrayAdapter<ArticlesList>{
 			@Override
 			public boolean onTouch(View v, MotionEvent event) {
 				if (event.getAction() == android.view.MotionEvent.ACTION_DOWN) {
-					holder.title.setBackgroundResource(android.R.color.holo_blue_light);
+                    holder.title.setBackgroundColor(context.getResources().getColor(android.R.color.holo_blue_light));
 				} else {
-					holder.title.setBackgroundResource(android.R.color.transparent);
+                    holder.title.setBackgroundColor(context.getResources().getColor(android.R.color.transparent));
 				}
 				
 				return false;
@@ -231,9 +232,9 @@ public class ListAdapter extends ArrayAdapter<ArticlesList>{
 			@Override
 			public boolean onTouch(View v, MotionEvent event) {
 				if (event.getAction() == android.view.MotionEvent.ACTION_DOWN) {
-					holder.comments.setBackgroundResource(android.R.color.holo_blue_light);
+					holder.comments.setBackgroundColor(context.getResources().getColor(android.R.color.holo_blue_light));
 				} else  {
-					holder.comments.setBackgroundResource(android.R.color.transparent);
+					holder.comments.setBackgroundColor(context.getResources().getColor(android.R.color.transparent));
 				}
 				
 				return false;
@@ -262,9 +263,9 @@ public class ListAdapter extends ArrayAdapter<ArticlesList>{
 			@Override
 			public boolean onTouch(View v, MotionEvent event) {
 				if (event.getAction() == android.view.MotionEvent.ACTION_DOWN) {
-					holder.upvote.setBackgroundResource(android.R.color.holo_blue_light);
+					holder.upvote.setBackgroundColor(context.getResources().getColor(android.R.color.holo_blue_light));
 				} else {
-					holder.upvote.setBackgroundResource(android.R.color.transparent);
+					holder.upvote.setBackgroundColor(context.getResources().getColor(android.R.color.transparent));
 				}
 				
 				return false;

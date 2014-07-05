@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import org.apache.http.Header;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
@@ -112,42 +113,6 @@ public class Login extends Activity {
         super.onBackPressed();
         overridePendingTransition(R.anim.push_right_in, R.anim.push_right_out);
     }
-	
-	// return types
-	// 1 - success
-	// 2 - wrong username/password
-	// 3 - network problem
-    private Integer log_in_user(String username, String password) {
-    	
-    	
-    	//get fnid from login page
-    	try {
-			Document loginpage 	= Jsoup.connect(LOGIN_PAGE_URL).get();
-			String fnid 		= loginpage.select("input[name=fnid]").attr("value");
-			
-			//Login
-			HttpClient httpclient 	= new DefaultHttpClient();
-		    HttpPost httppost 		= new HttpPost(LOGIN_URL);
-			List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
-	        nameValuePairs.add(new BasicNameValuePair("fnid", fnid));
-	        nameValuePairs.add(new BasicNameValuePair("u", username));
-	        nameValuePairs.add(new BasicNameValuePair("p", password));
-	        httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
-	        httppost.addHeader("Content-type", "application/x-www-form-urlencoded");
-	        httppost.addHeader("Accept","text/plain");
-	        httppost.addHeader("User-agent","Mozilla/5.0 (Linux; U; Android 2.2; en-us; Nexus One Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1");
-	        
-	        HttpResponse response = httpclient.execute(httppost);
-	        if (response.containsHeader("Set-Cookie")) {
-	        	login_cookie = response.getFirstHeader("Set-Cookie").getValue();
-	        	return 1;
-	        } else {
-	        	return 2;
-	        }
-		} catch (IOException e) {
-			return 3;
-		}	
-	}
     
     private class Authenticate extends AsyncTask<String, Void, Integer> {
     	
@@ -175,8 +140,11 @@ public class Login extends Activity {
 		        httppost.addHeader("User-agent","Mozilla/5.0 (Linux; U; Android 2.2; en-us; Nexus One Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1");
 		        
 		        HttpResponse response = httpclient.execute(httppost);
-		        if (response.containsHeader("Set-Cookie")) {
-		        	login_cookie = response.getFirstHeader("Set-Cookie").getValue();
+                Header[] cookies = response.getHeaders("Set-Cookie");
+		        if (cookies.length > 1) {
+                    for(int i = 0; i < cookies.length; i++) {
+                        login_cookie += cookies[i].getValue()+';';
+                    }
 		        	return 1;
 		        } else {
 		        	return 2;

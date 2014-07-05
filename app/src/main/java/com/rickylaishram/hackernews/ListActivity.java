@@ -114,6 +114,8 @@ public class ListActivity extends FragmentActivity implements ActionBar.OnNaviga
                                 getString(R.string.title_section2),
                                 getString(R.string.title_section3),
                                 getString(R.string.title_section4),
+                                getString(R.string.title_section5),
+                                getString(R.string.title_section6),
                         }),
                 this);
         actionBar.setSelectedNavigationItem(d_page);
@@ -179,7 +181,7 @@ public class ListActivity extends FragmentActivity implements ActionBar.OnNaviga
         return true;
     }
     
-    public class Content extends Fragment {
+    public static class Content extends Fragment {
 		public Content(){}
     	
     	public static final String ARG_SECTION_NUMBER = "section_number";
@@ -200,6 +202,10 @@ public class ListActivity extends FragmentActivity implements ActionBar.OnNaviga
             	url = "https://news.ycombinator.com/ask";
             } else if (curr_selection == 4) {
             	url = "https://news.ycombinator.com/best";
+            } else if (curr_selection == 5) {
+                url = "https://news.ycombinator.com/show";
+            } else if (curr_selection == 6) {
+                url = "https://news.ycombinator.com/shownew";
             }
             
             //clear everything

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="/Users/rickylaishram/Documents/workspace/Hacker_News/app/build/intermediates/pre-dexed/debug/support-v4-18.0.0-2484d88715cbcdaf306e7f8449d6546e84c1520d.jar"
+        jar="/Applications/Android Studio.app/sdk/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156"/>
+    <item
+        dex="/Users/rickylaishram/Documents/workspace/Hacker_News/app/build/intermediates/pre-dexed/debug/jsoup-1.6.3-f50d410ddd7a6465e931b67d00d2a57976c869b6.jar"
+        jar="/Users/rickylaishram/Documents/workspace/Hacker_News/app/libs/jsoup-1.6.3.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="f5794fa7847465283436bd9843045033971d0b9b"/>
+
+</pre-dex-items>

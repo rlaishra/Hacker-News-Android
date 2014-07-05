@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="2" >
+
+    <dataSet config="main" >
+        <source path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res" >
+            <file
+                name="out_small"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/anim/out_small.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="push_left_in"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/anim/push_left_in.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="push_left_out"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/anim/push_left_out.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="push_right_in"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/anim/push_right_in.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="push_right_out"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/anim/push_right_out.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="ic_action_search"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-hdpi/ic_action_search.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_action_search"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-mdpi/ic_action_search.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="bg_orange"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/bg_orange.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="bg_ver_shadow_left"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/bg_ver_shadow_left.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="bg_ver_shadow_right"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/bg_ver_shadow_right.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="blue"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/blue.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="browser"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/browser.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="button_down"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/button_down.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="button_down_disabled"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/button_down_disabled.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="button_down_done"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/button_down_done.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="button_up"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/button_up.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="button_up_disabled"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/button_up_disabled.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="button_up_done"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/button_up_done.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="button_up_night"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/button_up_night.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="c_1"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/c_1.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="c_10"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/c_10.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="c_11"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/c_11.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="c_2"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/c_2.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="c_3"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/c_3.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="c_4"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/c_4.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="c_5"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/c_5.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="c_6"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/c_6.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="c_7"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/c_7.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="c_8"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/c_8.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="c_9"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/c_9.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_action_search"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/ic_action_search.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_button_down_night"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/ic_button_down_night.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/ic_launcher.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_link"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/ic_link.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_link_disabled"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/ic_link_disabled.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_minus"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/ic_minus.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_plus"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/ic_plus.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_star_empty"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/ic_star_empty.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_star_empty_night"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/ic_star_empty_night.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_star_filled"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/ic_star_filled.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_star_filled_night"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/ic_star_filled_night.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_traiangle"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/ic_traiangle.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_write"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/ic_write.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_write_disabled"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/ic_write_disabled.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="icon_large"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/icon_large.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="icon_small"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/icon_small.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="icon_small_bw"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/icon_small_bw.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="icon_small_noti"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/icon_small_noti.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="link"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/link.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="list_seperator"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/list_seperator.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="read"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/read.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="red"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/red.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="reload"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/reload.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="reply_active"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/reply_active.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="reply_inactive"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/reply_inactive.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="send"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/send.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="social_chat"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/social_chat.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="social_share"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/social_share.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="white"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/drawable-xhdpi/white.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="about"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/about.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="about_night"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/about_night.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="article"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/article.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="article_night"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/article_night.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="bookmark_element"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/bookmark_element.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="bookmark_element_night"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/bookmark_element_night.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="comment_1"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/comment_1.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="comment_1_night"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/comment_1_night.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="comment_links"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/comment_links.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="comment_links_night"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/comment_links_night.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="comment_popup"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/comment_popup.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="comments"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/comments.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="comments_night"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/comments_night.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="comments_reply"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/comments_reply.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="donate"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/donate.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="list"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/list.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="list_layout"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/list_layout.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="list_layout_night"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/list_layout_night.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="list_night"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/list_night.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="list_popup"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/list_popup.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="reply"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/reply.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="settings"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/settings.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="settings_night"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/settings_night.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="splash"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/splash.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="userpasslayout"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/userpasslayout.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="userpasslayout_night"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/userpasslayout_night.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="article_menu"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/menu/article_menu.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="bookmark_menu"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/menu/bookmark_menu.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="comment_menu"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/menu/comment_menu.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="list"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/menu/list.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="list_loggedin"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/menu/list_loggedin.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="reply"
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/menu/reply.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/values/strings.xml"
+                qualifiers="" >
+                <string name="title_section1" >Top Articles
+                </string>
+                <string name="title_section3" >Ask Hacker News
+                </string>
+                <string name="title_section2" >New Articles
+                </string>
+                <string name="app_version" >3.25 (04072014)
+                </string>
+                <string name="title_section5" >Show HN
+                </string>
+                <string name="title_section4" >Best Articles
+                </string>
+                <string name="title_item_detail" >Item Detail
+                </string>
+                <string name="title_section6" >Show HN New
+                </string>
+                <string name="app_name" >Hacker News Android
+                </string>
+                <string name="title_activity_list" >Hacker News
+                </string>
+                <string name="hello_world" >Hello world!
+                </string>
+                <string name="title_item_list" >Items
+                </string>
+                <string name="point_text_color" >#B6B6B6
+                </string>
+                <string name="menu_settings" >Settings
+                </string>
+            </file>
+            <file
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/values/styles.xml"
+                qualifiers="" >
+
+                <style
+                    name="AppTheme"
+                    parent="@android:style/Theme.Holo" />
+            </file>
+            <file
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/values-v11/styles.xml"
+                qualifiers="v11" >
+
+                <style
+                    name="AppTheme"
+                    parent="android:Theme.Holo.Light" />
+            </file>
+            <file
+                path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/values-v14/styles.xml"
+                qualifiers="v14" >
+
+                <style
+                    name="AppTheme"
+                    parent="android:Theme.Holo.Light.DarkActionBar" />
+            </file>
+        </source>
+        <source path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/build/generated/res/rs/release" />
+        <source path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/build/generated/res/generated/release" />
+    </dataSet>
+    <dataSet config="release" >
+        <source path="/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/release/res" />
+    </dataSet>
+
+</merger>

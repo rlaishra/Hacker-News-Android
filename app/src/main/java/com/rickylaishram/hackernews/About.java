@@ -50,7 +50,7 @@ public class About extends Activity{
 				String aEmailList[] = {"rickylaishram@gmail.com"};
 				emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, aEmailList);
 				emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "[Hacker News Android]");
-				emailIntent.putExtra(android.content.Intent.EXTRA_TEXT, "App version - " + getResources().getString(R.string.app_version)); 
+				emailIntent.putExtra(android.content.Intent.EXTRA_TEXT, "App version - " + getResources().getString(R.string.app_version)+"\nEnter Message.");
 				emailIntent.setType("plain/text");
 				About.this.startActivity(emailIntent);
 				About.this.overridePendingTransition(R.anim.push_right_in, R.anim.push_right_out);

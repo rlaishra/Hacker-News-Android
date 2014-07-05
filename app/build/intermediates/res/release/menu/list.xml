@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/reload" android:showAsAction="always" android:icon="@drawable/reload" android:title="Reload"></item>
+    <item android:id="@+id/menu_bookmarks" android:title="Bookmarks" android:icon="@drawable/ic_star_filled" android:showAsAction="ifRoom"></item>
+    <item android:id="@+id/menu_login" android:title="Login" android:showAsAction="never"/>
+    <item android:id="@+id/menu_logout" android:title="Logout" android:showAsAction="never"></item>
+    <item android:id="@+id/menu_settings" android:title="Settings" android:showAsAction="never">
+    </item><item android:id="@+id/menu_about" android:title="About" android:showAsAction="never"></item>
+    
+    
+    
+    
+</menu>
+<!-- From: file:/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/menu/list.xml -->

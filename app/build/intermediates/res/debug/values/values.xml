@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="app_name">Hacker News Android</string>
+    <string name="app_version">3.25 (04072014)</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="point_text_color">#B6B6B6</string>
+    <string name="title_activity_list">Hacker News</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_section1">Top Articles</string>
+    <string name="title_section2">New Articles</string>
+    <string name="title_section3">Ask Hacker News</string>
+    <string name="title_section4">Best Articles</string>
+    <string name="title_section5">Show HN</string>
+    <string name="title_section6">Show HN New</string>
+    <!-- From: file:/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/values/styles.xml -->
+    <eat-comment />
+
+    <style name="AppTheme" parent="@android:style/Theme.Holo" />
+
+</resources>

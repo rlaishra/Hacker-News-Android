@@ -72,8 +72,23 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:layout_marginTop="10dp"
-                android:text="Developed by Ricky Laishram (Digitizor Media &amp; Web)."
+                android:text="Developed by Ricky Laishram"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="With contributions by :"
+                android:id="@+id/textView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="- David Carr"
+                android:id="@+id/textView5" />
+
             <TextView
                 android:id="@+id/TextView05"
                 android:layout_width="wrap_content"

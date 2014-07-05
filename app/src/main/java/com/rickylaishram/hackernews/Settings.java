@@ -60,7 +60,7 @@ public class Settings extends Activity {
 		Spinner default_page 				= (Spinner) findViewById(R.id.default_page);
 		Spinner text_size					= (Spinner) findViewById(R.id.text_size);
 		Switch external_browser 			= (Switch) findViewById(R.id.external_browser);
-		Switch night_mode 				= (Switch) findViewById(R.id.night_mode);
+		Switch night_mode 				    = (Switch) findViewById(R.id.night_mode);
 		Spinner color						= (Spinner) findViewById(R.id.color_scheme);
 		
 		COLOR_NUM	= color_num;
@@ -80,10 +80,12 @@ public class Settings extends Activity {
 		
 		//default page Setup spinner
 		List<String> page_list = new ArrayList<String>();
-		page_list.add("Top Articles");
-		page_list.add("New Articles");
-		page_list.add("Ask Hacker News");
-		page_list.add("Best Articles");
+		page_list.add(getString(R.string.title_section1));
+        page_list.add(getString(R.string.title_section2));
+        page_list.add(getString(R.string.title_section3));
+        page_list.add(getString(R.string.title_section4));
+        page_list.add(getString(R.string.title_section5));
+        page_list.add(getString(R.string.title_section6));
 		ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this,
 				android.R.layout.simple_spinner_item, page_list);
 		dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

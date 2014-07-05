@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical"
+    android:showDividers="middle" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+			
+            <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_marginTop="10dp" >
+		
+		        <TextView
+		            android:id="@+id/textView2"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:text="External browser"
+		            android:textAppearance="?android:attr/textAppearanceMedium" />
+		
+		        <Switch
+		            android:id="@+id/external_browser"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content" />
+		
+		    </LinearLayout>
+		
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_marginTop="10dp" >
+		
+		        <TextView
+		            android:id="@+id/TextView01"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:text="Night Mode"
+		            android:textAppearance="?android:attr/textAppearanceMedium" />
+		
+		        <Switch
+		            android:id="@+id/night_mode"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content" />
+
+		    </LinearLayout>
+		
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_marginTop="10dp" >
+				
+		        <TextView
+		            android:id="@+id/textView1"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:text="Default page"
+		            android:textAppearance="?android:attr/textAppearanceMedium" />
+		
+		        <Spinner
+		            android:id="@+id/default_page"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="right"
+		            android:layout_weight="1" />
+		
+		    </LinearLayout>
+
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_marginTop="10dp" >
+
+		        <TextView
+		            android:id="@+id/TextView02"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:text="Text size"
+		            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		        <Spinner
+		            android:id="@+id/text_size"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="right"
+		            android:layout_weight="1" />
+
+		    </LinearLayout>
+
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_marginTop="10dp" >
+
+		        <TextView
+		            android:id="@+id/TextView03"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:text="Color Scheme"
+		            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		        <Spinner
+		            android:id="@+id/color_scheme"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="right"
+		            android:layout_weight="1" />
+		    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout><!-- From: file:/Users/rickylaishram/Documents/workspace/Hacker_News/app/src/main/res/layout/settings.xml -->
