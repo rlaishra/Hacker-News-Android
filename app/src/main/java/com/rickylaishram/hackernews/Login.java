@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -125,6 +126,7 @@ public class Login extends Activity {
 			try {
 				//extract fnid
 				Document loginpage 	= Jsoup.connect(LOGIN_PAGE_URL).get();
+                loginpage.head()
 				String fnid 		= loginpage.select("input[name=fnid]").attr("value");
 				
 				//Login
@@ -141,6 +143,7 @@ public class Login extends Activity {
 		        
 		        HttpResponse response = httpclient.execute(httppost);
                 Header[] cookies = response.getHeaders("Set-Cookie");
+                Log.d("CookieLength", cookies.length+"");
 		        if (cookies.length > 1) {
                     for(int i = 0; i < cookies.length; i++) {
                         login_cookie += cookies[i].getValue()+';';
